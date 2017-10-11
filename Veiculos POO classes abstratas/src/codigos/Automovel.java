@@ -1,4 +1,4 @@
-package codigos;
+    package codigos;
 
 import javax.swing.JOptionPane;
 
@@ -22,7 +22,15 @@ public class Automovel extends Veiculo{
         return  "Placa: " + placa + ", Combustvíel: " + combustivel + super.toString() + "\n_______\n";
     }
 
+    @Override 
+    public void parar() {
+        JOptionPane.showMessageDialog(null, "Parando carro");
+    }
     
+    @Override
+    public void mover() {
+        JOptionPane.showMessageDialog(null, "Movendo carro");
+    }
     public String getPlaca() {
         return placa;
     }
