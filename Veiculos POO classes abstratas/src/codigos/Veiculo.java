@@ -1,9 +1,9 @@
 package codigos;
 
-public abstract class Veiculo {
+public abstract class Veiculo implements Acao{
     int potencia;
     String cor;
-
+    
     public Veiculo(int potencia, String cor) {
         this.potencia = potencia;
         this.cor = cor;
