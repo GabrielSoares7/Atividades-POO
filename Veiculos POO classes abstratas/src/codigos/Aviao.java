@@ -20,7 +20,17 @@ public class Aviao extends Veiculo {
     public void abastecerCombustivel(float quantidade) {
         JOptionPane.showMessageDialog(null, "O avião foi abastecido com 30 Kg de combustível");
     }
-
+    
+    @Override
+    public void parar() {
+        JOptionPane.showMessageDialog(null, "Parando aviao");
+    }
+    
+    @Override
+    public void mover() {
+        JOptionPane.showMessageDialog(null, "Movendo aviao");
+    }
+    
     @Override
     public String toString() {
         return "Avião código: " + codigo + "\nPeso máximo: " + pesoMax + super.toString() + "\n_______\n" ;
